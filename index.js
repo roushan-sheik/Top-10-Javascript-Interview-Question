@@ -24,14 +24,21 @@ function getLongestWord(sentence) {
   return longestWord;
 }
 const longestWord = getLongestWord("Arifa Moni Congratulations");
-console.log(longestWord);
+console.log( longestWord );
+
 //**3. Write a function that checks whether a given string is a palindrome or not. */
 function checkPalindrome(str) {
   return str === str.split().reverse().join("");
 }
 const isPalindrome = checkPalindrome("racecar");
-console.log(isPalindrome);
+console.log( isPalindrome );
+
 //**4. Write a function to remove duplicate elements from an array */
+function removeDuplicate(arr) {
+  return [...new Set(arr)];
+}
+const removeDup = removeDuplicate([1, 2, 3, 4, 4]);
+console.log(removeDup);
 //**5. Write a function that checks whether tow strings are anagrams or not. */
 //**6. Write a function that returns the number of vowels in a string. */
 //**7. Write a function to find the largest number in an array. */
