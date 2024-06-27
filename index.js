@@ -1,10 +1,12 @@
 //**1. Write a function that return the reverse of a string. */
 function main(str) {
-  let reverseStr = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    reverseStr += str[i];
-  }
-  return reverseStr;
+  //   let reverseStr = "";
+  //   for (let i = str.length - 1; i >= 0; i--) {
+  //     reverseStr += str[i];
+  //   }
+  //     return reverseStr;
+  //*NOTE -  now we will do it by one line of code
+  return str.split("").reverse().join("");
 }
 const result = main("Arifa");
 console.log(result);
