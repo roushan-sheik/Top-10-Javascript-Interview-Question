@@ -11,7 +11,20 @@ function main(str) {
 const result = main("Arifa");
 console.log(result);
 
-//**2. Write a function that checks whether a given. */
+//**2. Write a function that returns the longest word in the sentence. */
+function getLongestWord(sentence) {
+  let longestWord = "";
+  const words = sentence.split(" ");
+  console.log(words);
+  for (let word of words) {
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
+  }
+  return longestWord;
+}
+const longestWord = getLongestWord("Arifa Moni Congratulations");
+console.log(longestWord);
 //**3. Write a function that checks whether a given string is a palindrome or not. */
 //**4. Write a function to remove duplicate elements from an array */
 //**5. Write a function that checks whether tow strings are anagrams or not. */
