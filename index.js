@@ -1,4 +1,14 @@
-//**1. Write a function that returen the reverse of a string. */
+//**1. Write a function that return the reverse of a string. */
+function main(str) {
+  let reverseStr = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reverseStr += str[i];
+  }
+  return reverseStr;
+}
+const result = main("Arifa");
+console.log(result);
+
 //**2. Write a function that checks whether a given. */
 //**3. Write a function that checks whether a given string is a palindrome or not. */
 //**4. Write a function to remove duplicate elements from an array */
@@ -7,5 +17,4 @@
 //**7. Write a function to find the largest number in an array. */
 //**8. Write a function to check if a given number is prime or not. */
 //**9. Write a function to calculate the factorial of a number */
-//**10. Write a program to remove all whitespace characters from a string */ 
-  
+//**10. Write a program to remove all whitespace characters from a string */
